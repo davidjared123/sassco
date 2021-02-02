@@ -1,0 +1,133 @@
+@font-face {
+    font-family: karla;
+    src: url('/assets/font/karla-Bold.ttf');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: karla;
+    src: url('/assets/font/karla-Regular.ttf');
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: karla;
+    src: url('/assets/font/Karla-MediumItalic.ttf');
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: karla;
+    src: url('/assets/font/Karla-Medium.ttf');
+    font-weight: 400;
+  }
+body{
+    font-family: 12px;
+    font-family: karla;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --primary: #24e09b;
+    --secondary: #3742d2;
+    --gray: #bbbbbb;
+}
+
+/* CLASES GENERALES */
+.wrapper-main{
+    padding: 0 2em;
+}
+
+#main{
+    background-image: url('/assets/img/bg1.png');
+    height: 620px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .navbar-icon p{
+    margin: 0;
+    font-size: 2em;
+    color: white;
+}
+nav .navbar-icon p span{
+    color: var(--primary);
+}
+
+nav .navbar-links{
+    display: none;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+.navbar-menu-icon{
+    width: 3.54em;
+    height: 3.54em;
+    border-radius: 50%;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-menu-icon img{
+    width: 2.5em;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-img{
+    width: 100%;
+    text-align: center;
+}
+.main-img img{
+    align-self: center;
+    width: 80%;
+}
+
+.main-description{
+    color: white;
+}
+.main-description h1{
+    font-size: 2.5em;
+}
+
+.main-description a{
+    text-decoration: none;
+    color: white;
+    padding: 1em 2em;
+    background-color: var(--primary);
+    border-radius: 5px;
+}
+
+.main-description .main-info{
+    margin-bottom: 2em;
+}
+
+.main-description .main-credit{
+    margin-top: 1.5em;
+    font-weight: 300;
+}
+
+@media (min-width: 1024px){
+    #main{
+        height: 640px;
+    }
+    .main{
+        grid-template-columns: 55% 45%;
+    }
+}
